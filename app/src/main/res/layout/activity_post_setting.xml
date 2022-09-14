@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey600"
+    tools:context=".PostSetting">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="60dp"
+        android:backgroundTint="@color/quantum_grey300"
+        android:background="@color/quantum_grey300"
+        android:layout_margin="25dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/quantum_grey300"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/setpost_profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profil"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"
+                android:layout_below="@+id/tv31"
+                android:layout_margin="25dp"
+                />
+            <TextView
+                android:id="@+id/setpost_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:fontFamily="cursive"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_toRightOf="@+id/setpost_profile_image"
+                android:layout_marginTop="50dp"
+                />
+            <TextView
+                android:id="@+id/setpost_timeago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time ago"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/setpost_profile_image"
+                android:layout_below="@id/setpost_username"
+                />
+
+
+            <EditText
+                android:id="@+id/setpost_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setpost_timeago"
+                android:layout_marginEnd="30dp"
+                android:text="this is discription"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                />
+            <ImageView
+
+                android:id="@+id/setpost_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setpost_profile_image"
+                android:layout_marginTop="120dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/post"
+                android:elevation="10dp"
+                android:layout_centerHorizontal="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"/>
+
+
+                <TextView
+                    android:id="@+id/setpost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/setpost_image"
+                    android:layout_marginTop="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Set Post"
+                    android:textColor="@color/quantum_grey600"
+                    android:textSize="36dp"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    />
+            <ImageView
+                android:id="@+id/btn_return"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="00dp"
+                android:src="@drawable/ic_return"
+                />
+            <View
+                android:layout_width="130dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/setpost"
+                android:layout_centerHorizontal="true"
+  android:background="@color/quantum_grey600"
+/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

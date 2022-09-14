@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/connexion"
+    tools:context=".Connexion">
+    <TextView
+        android:id="@+id/tv21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="90dp"
+        android:textStyle="italic"
+        android:textColor="@color/yellow"
+        android:layout_margin="20dp"
+        android:fontFamily="cursive"/>
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv21"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="45dp"
+            android:src="@drawable/ic_email"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/cnx_email"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/i1"
+            android:ems="10"
+            android:hint="Adress e_mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textSize="17dp"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearlayout1"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/ic_lock"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/cnx_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/i2"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:hint="Mot de passe"
+            android:textSize="17dp"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/cnx_btncnx"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearlayout2"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Connecter"
+        android:textAllCaps="true"
+        android:textColor="@color/yellow"
+        android:textSize="26dp"
+        android:textStyle="italic"
+        android:background="@color/trans"
+        />
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll33"
+        android:layout_marginBottom="00dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/yellow"
+        android:text="Forget Password"
+        android:textSize="14dp"
+
+
+
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll33"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cnx_aboutus"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:gravity="left"
+            android:text="About Us"
+            android:textColor="@color/yellow"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cnx_visitus"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:gravity="end"
+            android:text="Visit Us"
+            android:textColor="@color/yellow"
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:visibility="invisible"
+        android:id="@+id/progressBar"
+        android:progress="25"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

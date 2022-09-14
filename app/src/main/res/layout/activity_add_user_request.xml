@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey300"
+    tools:context=".AddUserRequest">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/quantum_googred"
+            >
+
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_att"
+                />
+            <TextView
+                android:id="@+id/join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join "
+                android:textColor="@color/quantum_grey300"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="150dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="75dp"
+                android:fontFamily="cursive"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please "
+                android:textColor="@color/quantum_grey300"
+                android:layout_toLeftOf="@id/join"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="170dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="25dp"
+                android:fontFamily="cursive"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Us "
+                android:textColor="@color/quantum_grey300"
+                android:layout_toRightOf="@id/join"
+                android:layout_marginBottom="170dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="25dp"
+                android:fontFamily="cursive"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

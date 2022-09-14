@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "283016808470",
+    "project_id": "projetfinetude-60247",
+    "storage_bucket": "projetfinetude-60247.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283016808470:android:b5c7be2d60b7ed4435cd37",
+        "android_client_info": {
+          "package_name": "com.example.projetfinetude"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283016808470-rvg9b3abi3ltocbfcihp4iaa5lcrpsi1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2YgI0WeyvTtVAolQ1JkOOtnGz2ypvftI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283016808470-rvg9b3abi3ltocbfcihp4iaa5lcrpsi1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

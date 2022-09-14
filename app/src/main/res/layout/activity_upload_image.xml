@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey800"
+    tools:context=".UploadImage">
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Upload picture"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="35dp"
+        android:fontFamily="cursive"
+        android:background="@color/trans"
+        />
+    <View
+        android:layout_width="185dp"
+        android:layout_height="2dp"
+        android:background="@color/blue"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="25dp"
+        />
+    <EditText
+        android:id="@+id/posttitle"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Write something"
+        android:layout_below="@id/upload"
+        android:layout_marginTop="70dp"
+        android:textColorHint="@color/quantum_grey100"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="270dp"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="25dp"
+        >
+        <ImageView
+            android:id="@+id/imageToPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/quantum_grey800"
+            />
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/addImageToUpload"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_choos_pic"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"        />
+   <TextView
+       android:id="@+id/sendImageToUpload"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Add picture"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="40dp"
+       android:textColor="@color/blue"
+       android:textSize="20dp"
+       android:layout_toRightOf="@id/addImageToUpload"/>
+
+</RelativeLayout>

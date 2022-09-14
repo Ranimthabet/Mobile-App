@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGroup">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/quantum_yellow50">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:text="Add Group"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:textColor="@color/quantum_grey600"
+                android:textSize="45dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="180dp"
+                android:src="@drawable/profil"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp"
+                android:id="@+id/addgrp_image"
+                />
+            <EditText
+                android:id="@+id/addgrp_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addgrp_image"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:hint="  Group name"
+                android:textColorHint="@color/quantum_grey300"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/addgrp_data"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addgrp_name"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:hint="  Informations"
+                android:textColorHint="@color/quantum_grey300"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/btn_addgrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Add "
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:textColor="@color/quantum_grey600"
+                android:textSize="45dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey100"
+    tools:context=".Region">
+
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/inforegion"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_inforegion"
+        />
+
+    <ImageView
+        android:id="@+id/regionavis"
+        android:layout_marginTop="10dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="55dp"
+        android:src="@drawable/ic_avis"
+        />
+
+    <ImageView
+        android:id="@+id/regionnote"
+        android:layout_marginTop="10dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="145dp"
+        android:src="@drawable/ic_note"
+        />
+    <ImageView
+        android:id="@+id/regionadd"
+        android:layout_marginTop="10dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/ic_ajout"
+        />
+
+    <TextView
+        android:id="@+id/regionname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:text="Destination"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:background="@color/trans"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/regionRecycler"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_switch"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/ic_switch"
+        />
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/usefull_bg"
+    android:layout_height="match_parent"
+    tools:context=".Randonne">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:background="@color/trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/empty_recyclerview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/titre"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD RANDONNEE"
+                android:textSize="30dp"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                />
+            <EditText
+                android:id="@+id/randonne_title"
+                android:layout_below="@id/titre"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:drawableRight="@drawable/ic_user"
+                android:layout_centerHorizontal="true"
+                android:hint="     Title..."
+                android:textColorHint="@color/quantum_grey300"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/emptyedittext_latout"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/randonne_location"
+                android:layout_below="@id/randonne_title"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:hint="      Location..."
+                android:textColorHint="@color/quantum_grey300"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/emptyedittext_latout"
+                android:inputType="textPostalAddress"
+                android:drawableRight="@drawable/ic_position"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Date"
+                android:textColor="@color/yellow"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/randonne_location"
+
+
+                />
+            <LinearLayout
+                android:id="@+id/layoutevent2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/randonne_location"
+                android:layout_marginTop="60dp"
+                >
+                <ImageView
+                    android:id="@+id/logo_calenddddar2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_eventevent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    />
+                <EditText
+                    android:id="@+id/randonne_startdate"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:hint="  From..."
+                    android:textColorHint="@color/quantum_grey300"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@drawable/emptyedittext_latout"
+                    android:inputType="date"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Description"
+                android:textColor="@color/yellow"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/layoutevent2"
+                />
+            <EditText
+                android:id="@+id/randonne_discription"
+                android:layout_below="@id/layoutevent2"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="40dp"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:hint="  Write something"
+                android:textColorHint="@color/quantum_grey300"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:background="@drawable/emptyedittext_latout"
+
+                />
+            <Button
+                android:id="@+id/btn_addrandonne"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD RANDONNEE"
+                android:textSize="15dp"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                android:background="@color/trans"
+                android:fontFamily="cursive"
+                android:layout_alignParentBottom="true"
+                />
+            <View
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:background="@color/yellow"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="55dp"
+
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

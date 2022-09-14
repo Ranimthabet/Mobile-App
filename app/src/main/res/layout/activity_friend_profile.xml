@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".FriendProfile">
+
+    <RelativeLayout
+android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/porfile_imageporfile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/profil"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:id="@+id/friendmsg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_friendmsg"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+        <ImageView
+            android:id="@+id/friendbloc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_bloc"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/friendmsg"
+            android:layout_marginRight="30dp"
+
+            />
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_below="@+id/porfile_imageporfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="userName"
+            android:textSize="36dp"
+            android:textColor="@color/blue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+
+            />
+        <View
+            android:layout_below="@id/profile_username"
+            android:id="@+id/margeprofil"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="1dp"
+            android:background="@color/black"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/lp1"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/margeprofil"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ic_prfltlfn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_birthdate"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_below="@+id/profile_userphone"
+                android:id="@+id/profile_birthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05/10/1998"
+                android:layout_marginLeft="25dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lp2"
+            android:layout_below="@id/lp1"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ic_prflagenda"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_phone"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/profile_userphone"
+                android:layout_below="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lp3"
+            android:layout_below="@id/lp2"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ic_prflemail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_email"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="userUser@gmail.com"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_below="@id/lp3"
+            android:id="@+id/margeprofil2"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="15dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/profilerecycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/lp3"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

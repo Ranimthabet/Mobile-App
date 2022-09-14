@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/quantum_grey300"
+    tools:context=".SetRandonne"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="30dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:background="@color/quantum_grey100"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/setrandoimage"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/profil"
+                app:civ_border_width="1dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="35dp"
+                app:civ_border_color="#FF000000"
+                />
+            <TextView
+                android:id="@+id/setrandoname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:fontFamily="cursive"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/blue"
+                android:layout_toRightOf="@+id/setrandoimage"
+                android:layout_marginTop="100dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/setevent1"
+                android:layout_below="@id/setrandoimage"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/logoalarm"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_time"
+                    android:layout_marginTop="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/setrandodate"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="05/10/1998"
+                    android:layout_toRightOf="@+id/logoalarm"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/setrandotitle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setrandoname"
+                android:text="Event Title"
+                android:textColor="@color/grren"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/setrandoimage"
+                />
+
+            <LinearLayout
+                android:id="@+id/setevent2"
+                android:layout_below="@id/setevent1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/logomap"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_location"
+
+
+                    />
+                <EditText
+                    android:id="@+id/setrandolocationn"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="Event Location"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="25dp"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/logomap"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/setrandodiscription"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:layout_below="@id/setevent2"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="50"
+                android:text="  this is discription \n of an event "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:background="@drawable/event_discription_layout"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/setrando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_centerHorizontal="true"
+                android:text="Set Rando"
+                android:textColor="@color/quantum_grey600"
+                android:textSize="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                />
+            <ImageView
+
+                android:id="@+id/backrando"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_return"
+                />
+            <View
+                android:layout_width="130dp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/quantum_grey600"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

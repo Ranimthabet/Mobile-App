@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:id="@+id/first">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profil"/>
+    <item android:id="@+id/geomap"
+        android:title="Map"
+        android:icon="@drawable/ic_location"/>
+    <item android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat"/>
+    <item android:id="@+id/friend"
+        android:title="Friend"
+        android:icon="@drawable/ic_friend"/>
+    <item android:id="@+id/events"
+        android:title="Events"
+        android:icon="@drawable/ic_events"/>
+    <item android:id="@+id/group"
+        android:title="Groupes"
+        android:icon="@drawable/ic_group"/>
+    <item android:id="@+id/randonnée"
+        android:title="Randonnées"
+        android:icon="@drawable/ic_randonnee"/>
+    <item android:id="@+id/myfavoris" android:title="Favoris" android:icon="@drawable/ic_etoil"/>
+    <item android:id="@+id/add_friend"
+        android:title="Find friend"
+        android:icon="@drawable/ic_addfriend"/>
+</group>
+    <group android:id="@+id/second">
+        <item android:id="@+id/feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="Feedback"/>
+        <item android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out"/>
+    </group>
+</menu>

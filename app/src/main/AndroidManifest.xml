@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projetfinetude">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_camp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjetFinEtude">
+        <activity android:name=".AddPostGroup"></activity>
+        <activity android:name=".ListMyfriend" />
+        <activity android:name=".MemberGroup" />
+        <activity android:name=".SingleGroup" />
+        <activity android:name=".AddGroup" />
+        <activity android:name=".SearchGroup" />
+        <activity android:name=".GroupReception" />
+        <activity android:name=".AddFeedback" />
+        <activity android:name=".FeedbackAcceuil" />
+        <activity android:name=".AllRegion" />
+        <activity android:name=".UserImageUploaded" />
+        <activity android:name=".MyLocationMap" />
+        <activity android:name=".AddUserRequest" />
+        <activity android:name=".AddDestinationImage" />
+        <activity android:name=".Noter" />
+        <activity android:name=".AddAvis" />
+        <activity android:name=".ChatReception" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".SetRandonne" />
+        <activity android:name=".SetEvents" />
+        <activity android:name=".PostSetting" />
+        <activity android:name=".ChangeUserImage" />
+        <activity android:name=".Favoris" />
+        <activity android:name=".SettingProfile" />
+        <activity android:name=".RefClass" />
+        <activity android:name=".FriendProfile" />
+        <activity android:name=".Avis" />
+        <activity android:name=".Randonne" />
+        <activity android:name=".RandonneReception" />
+        <activity android:name=".UploadImage" />
+        <activity android:name=".RegionInformation" />
+        <activity android:name=".Region" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCqSEz2Cv-To-nz9BLim7FswvZUckkvugo" />
+
+        <activity android:name=".EventReception" />
+        <activity android:name=".MyFriendActivity" />
+        <activity android:name=".Events" />
+        <activity android:name=".ImagePostActivity" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".ViewFriend" />
+        <activity android:name=".FindFriend" />
+        <activity android:name=".Profile" />
+        <activity android:name=".ReceptionAcceuil" />
+        <activity android:name=".UserAcceuil" />
+        <activity android:name=".Inscription" />
+        <activity android:name=".Connexion" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".VisiteurAcceuil" />
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey600"
+    tools:context=".AddAvis">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Avis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/yellow"
+        android:textSize="60dp"
+        android:fontFamily="cursive"
+
+
+
+
+
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:background="@color/quantum_grey300"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="20dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp"
+                android:src="@drawable/profil"
+            android:id="@+id/avis_userimage"
+            />
+            <TextView
+                android:id="@+id/avis_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:textStyle="italic"
+                android:textColor="@color/blue"
+                android:textSize="32dp"
+                android:layout_marginTop="45dp"
+                android:layout_toRightOf="@id/avis_userimage"
+                android:layout_marginStart="10dp"
+                android:fontFamily="cursive"
+                />
+            <EditText
+                android:id="@+id/avis_text"
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/avis_userimage"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:background="@drawable/empty"
+                android:textColorHint="@color/quantum_grey600"
+                android:hint="  Please help us with your(Avis) "
+                />
+
+            <TextView
+                android:id="@+id/avis_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avis_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="cursive"
+                android:text="Save"
+                android:textColor="@color/blue"
+                android:layout_centerHorizontal="true"
+                android:textSize="32dp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

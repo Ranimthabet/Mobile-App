@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatReception">
+   <LinearLayout
+       android:background="@color/quantum_grey300"
+       android:id="@+id/mychattoolbar"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:orientation="horizontal">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/mypic"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:layout_margin="10dp"
+           android:src="@drawable/profil"
+           app:civ_border_width="1dp"
+           app:civ_border_color="@color/black"
+           />
+       <TextView
+           android:id="@+id/myname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="username"
+           android:layout_marginTop="20dp"
+           android:textColor="@color/blue"
+           android:textSize="24dp"
+           android:fontFamily="cursive"
+           />
+   </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mychatRecyler"
+        android:layout_below="@id/mychattoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

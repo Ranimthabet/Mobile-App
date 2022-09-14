@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey50"
+    tools:context=".RandonneReception">
+    <LinearLayout
+        android:id="@+id/ranlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/quantum_grey300"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/addRandonne"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_add"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/randonnée"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Randonnées"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/yellow"
+            android:fontFamily="cursive"
+            android:layout_marginStart="180dp"
+
+
+            />
+        <View
+            android:layout_width="130dp"
+            android:layout_height="2dp"
+            android:background="@color/yellow"
+            android:layout_marginStart="180dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRandonne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ranlayout"
+        />
+
+</RelativeLayout>

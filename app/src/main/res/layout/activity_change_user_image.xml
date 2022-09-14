@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_grey600"
+    tools:context=".ChangeUserImage">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="25dp"
+        app:cardCornerRadius="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/quantum_grey300"   >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting Profile"
+                android:textColor="@color/teal_200"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic"
+                android:textSize="50dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="cursive"
+                />
+            <View
+                android:id="@+id/margsettinge"
+                android:layout_width="270dp"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="95dp"
+                android:background="@color/teal_200"
+                />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/setuserimage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/profil"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/btn_saveimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Change Image"
+                android:textColor="@color/teal_200"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

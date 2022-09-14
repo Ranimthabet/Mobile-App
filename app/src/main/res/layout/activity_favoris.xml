@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favoris">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:background="@color/quantum_yellow50">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/favoris_imageprofile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp"
+                android:src="@drawable/profil"
+                />
+            <TextView
+                android:id="@+id/favoris_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textColor="@color/blue"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="80dp"
+            />
+            <TextView
+                android:id="@+id/favoris_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_below="@+id/favoris_imageprofile"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="95dp"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/favoris_view1"
+                android:layout_width="70dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/favoris_event"
+                android:layout_marginStart="95dp"
+                android:background="@color/blue"
+
+                />
+            <TextView
+                android:id="@+id/favoris_randonnee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Randonnee"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/favoris_imageprofile"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="95dp"
+                />
+            <View
+                android:id="@+id/favoris_view"
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/favoris_event"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="95dp"
+                android:background="@color/blue"
+android:visibility="invisible"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_event"
+                android:layout_width="match_parent"
+                android:background="@color/quantum_yellow50"
+                android:layout_height="match_parent"
+            android:layout_below="@id/favoris_view1"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+            />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_randoonee"
+                android:layout_width="match_parent"
+                android:background="@color/quantum_yellow50"
+                android:layout_height="match_parent"
+                android:layout_below="@id/favoris_view1"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

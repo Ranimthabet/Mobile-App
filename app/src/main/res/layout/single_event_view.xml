@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/trans"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/quantum_grey100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/post_profile_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/profil"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"
+                android:layout_below="@+id/tv31"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:id="@+id/event_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_toRightOf="@+id/post_profile_image"
+                android:layout_marginTop="20dp"
+                />
+            <ImageView
+                android:id="@+id/logoalarm"
+                android:layout_below="@id/titleEvent"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_time"
+
+
+                />
+            <TextView
+                android:id="@+id/eventstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="05/10/1998"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/logoalarm"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@id/titleEvent"
+                />
+
+            <ImageView
+                android:id="@+id/eventoption"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_postoption"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/favoris"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_staremty"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/discriptionEvent"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:id="@+id/favoriscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/discriptionEvent"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="22dp"
+                android:textColor="@color/quantum_googred"
+                android:layout_below="@id/eventoption"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:background="@drawable/empty_btn_event"
+                />
+            <TextView
+                android:id="@+id/set"
+                android:background="@drawable/empty_btn_event"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set"
+                android:textSize="22dp"
+                android:textColor="@color/blue"
+                android:layout_below="@id/eventoption"
+                android:layout_marginTop="40dp"
+android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="105dp"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:id="@+id/titleEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeEvent"
+                android:text="Event Title"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/timeEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_username"
+                android:text="DAte date"
+                android:textColor="@color/quantum_grey600"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/post_profile_image"
+                />
+            <View
+                android:id="@+id/view"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/blue"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/eventstart"/>
+
+           <ImageView
+               android:id="@+id/logomap"
+               android:layout_below="@id/view"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_marginStart="25dp"
+               android:src="@drawable/ic_location"
+
+
+               />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:text="Event Location"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"
+                android:layout_toRightOf="@+id/logomap"
+                />
+            <View
+                android:layout_marginStart="25dp"
+                android:id="@+id/view2"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/blue"
+                android:layout_below="@id/logomap"/>
+
+            <TextView
+                android:id="@+id/discriptionEvent"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+
+                android:layout_below="@id/view2"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="50"
+                android:text="  this is discription \n of an event "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:background="@drawable/emptyedittext_latout"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
